@@ -123,6 +123,8 @@ const submit = async ({productPath, archivePath, primaryBundleId, username, pass
         throw Error("Unknown failure - altool did not run at all?");
     }
 
+    console.log(stdout);
+
     if (exitCode !== 0) {
         // TODO Maybe print stderr - see where that ends up in the output? console.log("STDERR", stderr);
         const response = JSON.parse(stdout);
