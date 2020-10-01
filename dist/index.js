@@ -35,6 +35,8 @@ const parseConfiguration = () => {
         throw Error(`Product path ${configuration.productPath} does not exist.`);
     }
 
+    console.log("CONFIGURATION:", configuration);
+
     return configuration
 };
 
@@ -176,6 +178,8 @@ const wait = async ({uuid, username, password, verbose}) => {
 
         const {exitCode, stdout, stderr} = await xcrun;
 
+        console.log(stdout);
+
         if (exitCode === undefined) {
             // TODO Command did not run at all
             throw Error("Unknown failure - altool did not run at all?");
@@ -252,6 +256,8 @@ const main = async () => {
             core.setFailed("Notarization failed");
             return;
         }
+
+        await sleep(15000); // TODO On a busy day, it can take a while before the build can be checked?
 
         const success = await core.group('Waiting for Notarization Status', async () => {
             return await wait({uuid: uuid, archivePath: archivePath, ...configuration})
