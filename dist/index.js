@@ -166,7 +166,7 @@ const wait = async ({uuid, username, password, verbose}) => {
 
     //console.log("Executing", "xcrun", args, {reject: false});
 
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 10; i++) {
         let xcrun = execa("xcrun", args, {reject: false});
 
         if (verbose == true) {
@@ -215,7 +215,7 @@ const wait = async ({uuid, username, password, verbose}) => {
                 return false;
         }
 
-        await sleep(10000);
+        await sleep(30000);
     }
 
     core.error("Failed to get final notarization status on time.");
