@@ -176,7 +176,7 @@ const wait = async ({uuid, username, password, verbose}) => {
         args.push("--verbose");
     }
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 40; i++) {
         let xcrun = execa("xcrun", args, {reject: false});
 
         if (verbose == true) {
