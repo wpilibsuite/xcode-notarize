@@ -134,9 +134,9 @@ const submit = async ({productPath, archivePath, primaryBundleId, username, pass
     }
 
     if (exitCode !== 0) {
-        // TODO Maybe print stderr - see where that ends up in the output? console.log("STDERR", stderr);
         const response = JSON.parse(stdout);
         if (verbose === true) {
+            console.log("STDERR", stderr);
             console.log(response);
         }
 
@@ -185,9 +185,9 @@ const wait = async ({uuid, username, password, verbose}) => {
         }
 
         if (exitCode !== 0) {
-            // TODO Maye print stderr - see where that ends up in the output? console.log("STDERR", stderr);
             const response = JSON.parse(stdout);
             if (verbose === true) {
+                console.log("STDERR", stderr);
                 console.log(response);
             }
 
