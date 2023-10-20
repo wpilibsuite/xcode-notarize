@@ -8,10 +8,11 @@ This action notarizes macOS applications or plug-ins. It does this by submitting
 
 ```yaml
 - name: "Notarize Release Build"
-  uses: devbotsxyz/xcode-notarize@v1
+  uses: wpilibsuite/xcode-notarize@v2
   with:
     product-path: "Export/Rings.app"
     appstore-connect-username: ${{ secrets.NOTARIZATION_USERNAME }}
+    appstore-connect-teamid: ${{ secrets.NOTARIZATION_TEAMID }}
     appstore-connect-password: ${{ secrets.NOTARIZATION_PASSWORD }}
 ```
 
