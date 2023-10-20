@@ -33,6 +33,9 @@ inputs:
   appstore-connect-username:
     description: 'The AppStore Connect username.'
     required: false
+  appstore-connect-teamid:
+    description: 'The AppStore Connect team id.'
+    required: false
   appstore-connect-password:
     description: 'The AppStore Connect password.'
     required: false
