@@ -23,12 +23,6 @@ const fs = require('fs');
 
 const core = require('@actions/core');
 const execa = require('execa');
-const plist = require('plist');
-
-
-const sleep = (ms) => {
-    return new Promise(res => setTimeout(res, ms));
-};
 
 
 const parseConfiguration = () => {
