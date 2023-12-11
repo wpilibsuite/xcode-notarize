@@ -61,5 +61,5 @@ outputs:
     description: "Path to the product that was notarized"
 
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
