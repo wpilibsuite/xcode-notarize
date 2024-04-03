@@ -27,6 +27,12 @@ The [devbotsxyz/example-macos-rings](https://github.com/devbotsxyz/example-macos
  * [Carthage Bootstrap](https://github.com/marketplace/actions/xcode-staple) - Bootstrap your Carthage Dependencies/
  * [Xcode Staple](https://github.com/marketplace/actions/xcode-staple) - Staple a Notarization Ticket to your product.
 
+## Rebuilding `dist/*`
+
+```bash
+npm install
+```
+
 ## License and Contributions
 
 This Action is licensed under the [MIT](LICENSE) license. Contributions are very much welcome and encouraged but we would like to ask to file an issue before submitting pull requests. 
