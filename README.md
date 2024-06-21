@@ -16,16 +16,15 @@ This action notarizes macOS applications or plug-ins. It does this by submitting
     appstore-connect-password: ${{ secrets.NOTARIZATION_PASSWORD }}
 ```
 
-Note that notarization is not the final step. After Apple has notarized your application, you also want to _staple_ a notarization ticket to your product. This can be done with the [Xcode Staple](https://github.com/marketplace/actions/xcode-staple) action.
+Note that notarization is not the final step. After Apple has notarized your application, you also want to _staple_ a notarization ticket to your product. This can be done with the [Apple Xcode Staple](https://github.com/marketplace/actions/apple-xcode-staple) action.
 
 ## Full Example
 
-The [devbotsxyz/example-macos-rings](https://github.com/devbotsxyz/example-macos-rings) project is an example macOS project with a [release.yml](https://github.com/devbotsxyz/example-macos-rings/.github/workflows/release.yml) workflow that shows all the steps needed to go from creating a release in GitHub to ending up with a `.zip` file that contains a signed and notarized application.
+The [PavanKumar-TR/example-macos-rings](https://github.com/PavanKumar-TR/example-macos-rings) project is an example macOS project with a [release.yml](https://github.com/PavanKumar-TR/example-macos-rings/blob/master/.github/workflows/release.yml) workflow that shows all the steps needed to go from creating a release in GitHub to ending up with a `.zip` file that contains a signed and notarized application.
 
 ## Related Actions
 
- * [Carthage Bootstrap](https://github.com/marketplace/actions/xcode-staple) - Bootstrap your Carthage Dependencies/
- * [Xcode Staple](https://github.com/marketplace/actions/xcode-staple) - Staple a Notarization Ticket to your product.
+ * [Xcode Staple](https://github.com/marketplace/actions/apple-xcode-staple - Staple a Notarization Ticket to your product.
 
 ## License and Contributions
 
