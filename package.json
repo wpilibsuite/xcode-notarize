@@ -1,6 +1,6 @@
 {
   "name": "xcode-notarize",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "GitHub Action to notarize macOS products.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devbotsxyz/xcode-notarize.git"
+    "url": "git+https://github.com/wpilibsuite/xcode-notarize.git"
   },
   "keywords": [
     "GitHub",
@@ -21,9 +21,9 @@
   "author": "Stefan Arentz <stefan@devbots.xyz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devbotsxyz/xcode-notarize/issues"
+    "url": "https://github.com/wpilibsuite/xcode-notarize/issues"
   },
-  "homepage": "https://github.com/devbotsxyz/xcode-notarize#readme",
+  "homepage": "https://github.com/wpilibsuite/xcode-notarize#readme",
   "dependencies": {
     "@actions/core": "^1.10.1",
     "execa": "^4.0.3",
